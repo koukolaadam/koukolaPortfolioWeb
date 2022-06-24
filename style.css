@@ -4,22 +4,17 @@ body{
     font-family: neue-kabel, sans-serif;
     color: #252525;
 }
-.dot {
+#dot {
     height: 25px;
     width: 25px;
     border-radius: 50%;
     display: inline-block;
-    animation: dotanimation 2s infinite;
+    animation: dotanimation 1.5s infinite;
 }
 
 @keyframes dotanimation {
     from{background-color: #E53170;}
     to{background-color: white;}
-}
-#mainMenu{
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
 }
 #frontend{
     color: #E53170;
@@ -29,4 +24,37 @@ body{
 }
 #designer{
     color: #FF8906;
+}
+#dot2 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: dotmove 3s infinite;
+    background-color: #F25F4C;
+}
+
+@keyframes dotmove {
+    0%{margin-left: 2%;}
+    25%{margin-left: 50%;}
+    50%{margin-left: 2%;}
+    75%{margin-left: 95%;}
+    100%{margin-left: 2%;}
+}
+#loadingSection{
+    margin-top: 100px;
+}
+#loadingLine{
+    background-color: #fff5f3;
+    padding: 2%;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 80px;
+}
+#loading{
+    text-align: center;
+}
+#mainMenu{
+    text-align: center;
 }
