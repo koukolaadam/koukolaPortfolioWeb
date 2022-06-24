@@ -1,0 +1,32 @@
+@import url("https://use.typekit.net/xnx2cip.css");
+body{
+    margin: 10%;
+    font-family: neue-kabel, sans-serif;
+    color: #252525;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: dotanimation 2s infinite;
+}
+
+@keyframes dotanimation {
+    from{background-color: #E53170;}
+    to{background-color: white;}
+}
+#mainMenu{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+#frontend{
+    color: #E53170;
+}
+#dev{
+    color: #F25F4C;
+}
+#designer{
+    color: #FF8906;
+}
